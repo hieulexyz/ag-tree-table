@@ -1,9 +1,9 @@
-export interface TreeNode {
+export interface TreeNode<T = any> {
   id: string;
   name: string;
   level: number;
   expanded?: boolean;
-  children?: TreeNode[];
+  children?: T[];
 
   [key: string]: any;
 }

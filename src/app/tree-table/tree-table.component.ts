@@ -68,7 +68,10 @@ export class TreeTableComponent {
     context: {
       toggleNode: (node: TreeNode) => this.toggleNode(node),
       sortTreeByName: (dir: 'asc' | 'desc') =>
-        this.sortTreeByName(dir)
+        this.sortTreeByName(dir),
+      onViewDetail: (node: TreeNode) => {
+        console.log(node);
+      }
     }
   };
 
