@@ -4,6 +4,7 @@ export interface TreeNode<T = any> {
   level: number;
   expanded?: boolean;
   children?: T[];
+  path: string[];
 
   [key: string]: any;
 }

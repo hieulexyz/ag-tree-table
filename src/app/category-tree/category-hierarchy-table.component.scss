@@ -1,0 +1,11 @@
+::ng-deep .ag-cell:empty {
+  background: transparent;
+}
+
+::ng-deep .tree-cell {
+  padding-left: 4px;
+}
+
+::ng-deep .tree-cell .ancestor {
+  opacity: 0.6;
+}

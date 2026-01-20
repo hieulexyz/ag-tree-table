@@ -27,7 +27,8 @@ export function getOrCreateNode(
       level,
       expanded: true,
       quantity: 0,
-      children: []
+      children: [],
+      path: []
     });
   }
   return <CategoryTreeNode>map.get(key)!;
@@ -95,7 +96,10 @@ export function buildCategoryTree(
           level,
           expanded: true,
           quantity: 0,
-          children: []
+          children: [],
+          path: parent
+            ? [...parent.path, name]
+            : [name]
         };
 
         currentMap.set(key, node);
